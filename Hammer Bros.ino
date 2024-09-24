@@ -19,7 +19,7 @@ Jakob Visic
 OCADU DIGF-6037 Creation & Computation
 
 A 2 player game where the first player to score 3 points wins.
-Use your Hammer to hit the sensor to change your Orange lights brightness.
+Use your Hammer to hit the sensore to change your Orange lights brightness.
 Match your organge light's brightness with the brightness of the light in the center to score a point.
 There is a 1 second delay (on both players sides) after ever hit, so time your hits accordingly.
 Once a player wins, the lights will fade 3 times, all lights will light up, and then the game will restart.
@@ -136,6 +136,7 @@ void checkIfHit () {
   if (p1mappedSensorValue > 25 && gameFinished == 0) { // if the Sensor value is above 25, and the game isnt finished, then 
     analogWrite(P1LEDpin, p1mappedSensorValue);        // set the players light to the mapped sensor value
   
+    timeBetweenHits = random(1000, 3000);
     delay(timeBetweenHits);                            // set a delay so the player cannot hit again unti the delay is done
 
     analogWrite(P1LEDpin, 0);                          // set the light back to 0 so that the player knows they can hit again
@@ -143,6 +144,7 @@ void checkIfHit () {
   if (p2mappedSensorValue > 25 && gameFinished == 0) { 
     analogWrite(P2LEDpin, p2mappedSensorValue);        
   
+    timeBetweenHits = random(1000, 3000);
     delay(timeBetweenHits);                            // set a delay so the player cannot hit again unti the delay is done
 
     analogWrite(P2LEDpin, 0);                          // set the light back to 0 so that the player knows they can hit again
