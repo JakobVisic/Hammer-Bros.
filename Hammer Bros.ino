@@ -18,6 +18,8 @@ Jakob Visic
 
 OCADU DIGF-6037 Creation & Computation
 
+Based on: https://github.com/DigitalFuturesOCADU/CC2024/blob/main/experiment1/fsr_led_thresholds/fsr_led_thresholds.ino
+
 A 2 player game where the first player to score 3 points wins.
 Use your Hammer to hit the sensore to change your Orange lights brightness.
 Match your organge light's brightness with the brightness of the light in the center to score a point.
