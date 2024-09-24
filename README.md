@@ -15,3 +15,6 @@ A project testing the capabilities of Arduino and simple parts such as:
 - Arduino Nano
 - LEDs
 - Pressure sensors
+
+
+based on: https://github.com/DigitalFuturesOCADU/CC2024/blob/main/experiment1/fsr_led_thresholds/fsr_led_thresholds.ino
